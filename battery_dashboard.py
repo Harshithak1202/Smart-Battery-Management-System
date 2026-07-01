@@ -7,10 +7,7 @@ import matplotlib.pyplot as plt
 st.title("🔋 Smart Battery Management System")
 
 # Load data
-data = pd.read_csv(
-    r"D:\Projects\Smart-Battery-Management-System\dataset\battery_data.csv"
-)
-
+data = pd.read_csv("battery_data.csv")
 # Train AI model
 X = data[['Voltage', 'Current', 'Temperature']]
 y = data['SOH']
